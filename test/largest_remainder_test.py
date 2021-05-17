@@ -1,18 +1,20 @@
-import largest_remainder
+import src.largest_remainder as lrm
+
 
 class TestClass:
   def test_sum_list(self):
     list_test = [ 3, 7, 4, 6, 1 ]
     target = 100
 
-    list = largest_remainder.list_largest_remainder(list_test, target)
+    list = lrm.list_largest_remainder(list_test, target)
+    
     assert sum(list) == target
 
   def test_diff_list(self):
     list_test = [ 3, 7, 4, 6, 1 ]
     target = 100
 
-    list = largest_remainder.list_largest_remainder(list_test, target)
+    list = lrm.list_largest_remainder(list_test, target)
     assert list_test.sort != list.sort()
 
   def test_sum_list_2(self):
@@ -25,7 +27,7 @@ class TestClass:
     ]
     target = 100
 
-    list = largest_remainder.list_largest_remainder(list_test, target)
+    list = lrm.list_largest_remainder(list_test, target)
     assert sum(list) == target
 
 
@@ -38,7 +40,7 @@ class TestClass:
 
     target = 100
 
-    dict = largest_remainder.dict_largest_remainder(dict_test, target)
+    dict = lrm.dict_largest_remainder(dict_test, target)
     assert sum([v for k, v in dict.items()]) == target
 
   def test_sum_dict_2(self):
@@ -53,6 +55,6 @@ class TestClass:
 
     target = 650
 
-    dict = largest_remainder.dict_largest_remainder(dict_test, target)
+    dict = lrm.dict_largest_remainder(dict_test, target)
     assert sum([v for k, v in dict.items()]) == target
 

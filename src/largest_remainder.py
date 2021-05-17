@@ -5,6 +5,14 @@ def main():
   list_test = [ 3, 7, 4, 6, 1 ]
   print(list_largest_remainder(list_test))
   
+  data = {
+  "promoter": 33.33,
+  "passive": 33.33,
+  "detractor": 33.33,
+  }
+
+  whole_number_dict = dict_largest_remainder(data)
+  print(whole_number_dict)
 
   test2 = [
     18.562874251497007,
