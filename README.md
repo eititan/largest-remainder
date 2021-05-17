@@ -9,7 +9,7 @@ Rounding all of the following percentages to the nearest whole number:
   33.33 -> 33%
   33.33 -> 33%
 ```
-Doesn't quiet add up to 100. With `n` number of decimals in this list, this number can be greater than 100 or less than 100.
+Doesn't quite add up to 100. With `n` number of decimals in this list, this number could be greater than 100 or less than 100.
 
 Another Example is:
 ```
